@@ -2,7 +2,10 @@
 
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
-.item3 { grid-area: main; }
+.item3 { 
+	grid-area: main;
+	align-content: center;
+}
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
 
@@ -23,7 +26,7 @@
     'menu menu main main main main'
     'footer footer footer footer footer footer';
   grid-gap: 10px;
-  background-color: #2196F3;
+  background-color: rgb(39, 108, 165);
   padding: 10px;
 }
 
@@ -34,7 +37,7 @@
   font-size: 30px;
 }
 
-
+/* 
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -48,7 +51,7 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-
+ */
 
 
 .container {
