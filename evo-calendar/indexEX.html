@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <title>My Evo Calendar</title>
+        // evo-calendar.css, followed by [theme-name].css (optional)
+        <link rel="stylesheet" type="text/css" href="css/evo-calendar.css"/>
+        <link rel="stylesheet" type="text/css" href="css/evo-calendar.midnight-blue.css"/>
+    </head>
+    <body>
+
+        // this is where your calendar goes.. :)
+        <div id="calendar"></div>
+
+        // evo-calendar.js, right after jQuery (required)
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/evo-calendar.js"></script>
+
+        <script>
+        // initialize your calendar, once the page's DOM is ready
+        $(document).ready(function() {
+            $('#calendar').evoCalendar({
+                
+            })
+        })
+        </script>
+
+    </body>
+</html>
