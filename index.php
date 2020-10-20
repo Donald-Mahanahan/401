@@ -1,8 +1,18 @@
+ <?php
+ session_start();
+ require_once dirname(__FILE__). 'Dao.php';
+     
+ $dao = new Dao();
+ ?>
+ 
+ 
  <!doctype html>
  <html lang="en">
  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=0">
  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
  <meta charset='utf-8'> -->
+
+
 
 
 
@@ -44,11 +54,11 @@
                  <button type="AddTask">Add Task</button>
                  <button type="Delete">Delete Task</button>
                  
-                 <!-- 
+                 <?php
                   $tasks = $dao->test();
                   echo $tasks;
                   echo $tasks[0];
-                 ?> -->
+                 ?>
                  
              </form>
              

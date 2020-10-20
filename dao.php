@@ -23,9 +23,8 @@ class Dao{
         $conn = $this->getConnection();
         if(is_null($conn)) {
             return;
-        }
-        
-            $query = "Select * from user;
+        }     
+            $query = "Select * from user;";
             $execute = $conn->prepare($query);
             
             $execute->execute();
