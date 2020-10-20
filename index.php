@@ -57,8 +57,8 @@
                  
                  <?php
                   $users = $dao->test();
-                  echo $tasks;
-                  echo $tasks[0];
+                  echo $users;
+                  echo $users[0];
                  ?>
                  
              </form>
