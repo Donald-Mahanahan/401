@@ -6,10 +6,7 @@
 
 
 
-
-
  <head>
-
      <title>Planski</title>
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.css" />
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.midnight-blue.css" />
@@ -20,10 +17,6 @@
  </head>
 
  <body>
-
-
-
-
 
      <div class="header" style="height:100%">
          Planski
@@ -50,6 +43,13 @@
                  <label for="vehicle3"> This will look nicer later I promise</label><br><br>
                  <button type="AddTask">Add Task</button>
                  <button type="Delete">Delete Task</button>
+                 
+                 <?php
+                  $tasks = $dao->test();
+                  echo $tasks;
+                  echo $tasks[0];
+                 ?>
+                 
              </form>
              
          </div>
