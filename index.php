@@ -57,8 +57,8 @@
                  
                  <?php
                   $users = $dao->test();
-                  echo $users;
-                  echo $users[0];
+                  print_r($users);
+                //   echo $users[0];
                  ?>
                  
              </form>
