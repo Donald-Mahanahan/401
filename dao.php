@@ -1,4 +1,5 @@
 <?php 
+
  error_reporting(E_ALL);
     ini_set('display_errors', 1);
 class Dao{
@@ -7,9 +8,10 @@ class Dao{
     private $dbname = 'heroku_674c85fd2485380';
     private $username = 'b96073f0ecf601';
     private $password = 'a3d89fef';
+
+    //comment
+    public function __construct(){}
         
-    
-    
     public function getConnection() {
         try {
             $connection = new PDO("mysql:host={$this->host};dbname={$this->dbname}", $this->username, $this->password);

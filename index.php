@@ -1,6 +1,6 @@
  <?php
  session_start();
- require_once dirname(__FILE__). 'Dao.php';
+ require_once dirname(__FILE__). '/Dao.php';
      
  $dao = new Dao();
  ?>
@@ -55,7 +55,7 @@
                  <button type="Delete">Delete Task</button>
                  
                  <?php
-                  $tasks = $dao->test();
+                  $users = $dao->test();
                   echo $tasks;
                   echo $tasks[0];
                  ?>
