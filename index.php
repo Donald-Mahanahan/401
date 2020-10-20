@@ -44,11 +44,11 @@
                  <button type="AddTask">Add Task</button>
                  <button type="Delete">Delete Task</button>
                  
-                 <?php
+                 <!-- 
                   $tasks = $dao->test();
                   echo $tasks;
                   echo $tasks[0];
-                 ?>
+                 ?> -->
                  
              </form>
              
