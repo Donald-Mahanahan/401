@@ -10,12 +10,6 @@
 
  <head>
 
-
-
-
-
-
-
      <title>Planski</title>
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.css" />
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.midnight-blue.css" />
