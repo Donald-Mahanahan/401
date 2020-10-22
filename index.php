@@ -37,7 +37,7 @@
 
      <div class="row">
          <div class="column1">
-             <form action="/task_handler.php">
+             <form method="POST" action="/task_handler.php">
                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                  <label for="vehicle1"> This</label><br>
                  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
@@ -54,6 +54,7 @@
                  <label for="vehicle3"> This will look nicer later I promise</label><br><br>
                  <button type="AddTask">Add Task</button>
                  <button type="Delete">Delete Task</button>
+                 <input type="submit" value="Post a Comment">
                  
                  <?php
                   $users = $dao->test();
