@@ -52,6 +52,7 @@
                  <label for="vehicle2"> on the calendar view</label><br>
                  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
                  <label for="vehicle3"> This will look nicer later I promise</label><br><br>
+                 <div>Task: <input type="text" name="task" id="task"/></div>
                  <button type="AddTask">Add Task</button>
                  <button type="Delete">Delete Task</button>
                  <input type="submit" value="Post a Comment">
