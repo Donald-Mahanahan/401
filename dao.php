@@ -33,6 +33,14 @@ class Dao{
             $result = $execute->fetchAll(PDO::FETCH_ASSOC);
             return $result;   
     }   
+
+    public function addTask($task) {
+        $conn = $this->getConnection();
+        $saveQuery = "insert into task (user_id, event_date, task) values (1,'2020-10-07', 'first task complete')";
+        $q = $conn->prepare($saveQuery);
+        $q->bindParam(":task", $task);
+        $q->execute();
+    }
     
 }
 

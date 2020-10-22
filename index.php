@@ -37,7 +37,7 @@
 
      <div class="row">
          <div class="column1">
-             <form action="/action_page.php">
+             <form action="/task_handler.php">
                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                  <label for="vehicle1"> This</label><br>
                  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
