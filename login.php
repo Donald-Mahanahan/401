@@ -28,11 +28,24 @@
      <div class="header" style="height:100%">
          Planski
          <img src="images\android-chrome-192x192.png" alt="Italian Trulli" style="height:50px">
-
      </div>
 
      <div class="row">
+        <form id="login-form" method="POST" action="/handlers/loginHandler.php">
+            <h1 class="heading">Login</h1>
 
+            <div class="login-form-row">
+                <label class="login-label" for="username">Please enter your username</label>
+                <input id="username" type="text"  name="username"  placeholder="Username">
+            </div>
+            <div class="login-form-row">
+                <label class="login-label" for="password">Please enter your password</label>
+                <input id="password" type="password"  name="password" placeholder="Password">
+            </div>
+            <div class="login-form-row">
+                <input id="login-submit"  type="submit" value="Login">
+            </div>
+        </form>
      </div>
 
      <div class="footer">
