@@ -41,6 +41,11 @@ class Dao{
         $q->bindParam(":task", $task);
         $q->execute();
     }
+
+    public function getTasks() {
+        $conn = $this->getConnection();
+        return $conn->query("select task from task", PDO::FETCH_ASSOC);
+      }
     
 }
 

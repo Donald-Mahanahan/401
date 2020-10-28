@@ -27,5 +27,5 @@ $dao->addTask($_POST['task']);
 $_SESSION['good'][] = "Thank you for posting";
 
 // redirect back to the comments page
-// header("Location: http://cs401/comments.php");
+header("Location: https://polar-sands-59708.herokuapp.com/");
 exit();

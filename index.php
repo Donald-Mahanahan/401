@@ -18,7 +18,7 @@
 
 
  <head>
-     <title>Planski</title>
+     <title>PlanskiXXX</title>
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.css" />
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.midnight-blue.css" />
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.royal-navy.css" />
@@ -55,7 +55,7 @@
                  <div>Task: <input type="text" name="task" id="task"/></div>
                  <button type="AddTask">Add Task</button>
                  <button type="Delete">Delete Task</button>
-                 <input type="submit" value="Post a Comment">
+                 
                  
                  <?php
                   $users = $dao->test();
