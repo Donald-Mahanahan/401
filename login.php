@@ -31,21 +31,23 @@
      </div>
 
      <div class="row">
-        <form id="login-form" method="POST" action="/handlers/loginHandler.php">
-            <h1 class="heading">Login</h1>
+         <div class="column1">
+            <form id="login-form" method="POST" action="/handlers/loginHandler.php">
+                <h1 class="heading">Login</h1>
 
-            <div class="login-form-row">
-                <label class="login-label" for="username">Please enter your username</label>
-                <input id="username" type="text"  name="username"  placeholder="Username">
-            </div>
-            <div class="login-form-row">
-                <label class="login-label" for="password">Please enter your password</label>
-                <input id="password" type="password"  name="password" placeholder="Password">
-            </div>
-            <div class="login-form-row">
-                <input id="login-submit"  type="submit" value="Login">
-            </div>
-        </form>
+                <div class="login-form-row">
+                    <label class="login-label" for="username">Please enter your username</label>
+                    <input id="username" type="text"  name="username"  placeholder="Username">
+                </div>
+                <div class="login-form-row">
+                    <label class="login-label" for="password">Please enter your password</label>
+                    <input id="password" type="password"  name="password" placeholder="Password">
+                </div>
+                <div class="login-form-row">
+                    <input id="login-submit"  type="submit" value="Login">
+                </div>
+            </form>
+        </div>
      </div>
 
      <div class="footer">
