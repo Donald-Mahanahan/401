@@ -46,6 +46,12 @@ class Dao{
         $conn = $this->getConnection();
         return $conn->query("select task from task", PDO::FETCH_ASSOC);
       }
+
+      public function getUsername() {
+        $conn = $this->getConnection();
+        return $conn->query("select task from task", PDO::FETCH_ASSOC);
+      }
+
     
 }
 

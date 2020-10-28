@@ -32,7 +32,7 @@
 
      <div class="row">
          <div class="column1">
-            <form id="login-form" method="POST" action="/handlers/loginHandler.php">
+            <form id="login-form" method="POST" action="login_handler.php">
                 <h1 class="heading">Login</h1>
 
                 <div class="login-form-row">
