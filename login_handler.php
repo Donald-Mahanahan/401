@@ -1,6 +1,8 @@
 <?php
+ error_reporting(E_ALL);
+  ini_set('display_errors', 1);
 //  require_once dirname(__FILE__). '/Dao.php';
- require_once '/Dao.php';
+//  require_once '/Dao.php';
 
  session_start();
  
@@ -8,8 +10,7 @@
  
  $regex = "/\w{1,20}/";
 
- error_reporting(E_ALL);
-    ini_set('display_errors', 1);
+
 
 // if (($_POST['username'] == 'zach') && ($_POST['password'] == '5678')) {
 //     $_SESSION['authenticated'] = true;
