@@ -8,6 +8,8 @@
  
  $regex = "/\w{1,20}/";
 
+ error_reporting(E_ALL);
+    ini_set('display_errors', 1);
 
 // if (($_POST['username'] == 'zach') && ($_POST['password'] == '5678')) {
 //     $_SESSION['authenticated'] = true;
@@ -27,6 +29,7 @@ if(!preg_match($regex,$_POST['userName']) || !preg_match($regex,$_POST['password
 }
 
 $results = $dao->userExists($_POST['userName'], $_POST['password']);
+print_r($users);
 
 
 // $dao = new Dao();
