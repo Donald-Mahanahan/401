@@ -1,11 +1,10 @@
 <?php
-    session_start();
-    require_once dirname(__FILE__). '/dao.php';
-    error_reporting(E_ALL);
-        ini_set('display_errors', 1);
-    $dao = new Dao();
- ?>
- 
+  session_start();
+  $username = "";
+  if(isset($_SESSION['form'])){
+      $username = $_SESSION['form']['username'];
+  }
+?>
  
  <!doctype html>
  <html lang="en">
@@ -35,9 +34,16 @@
             <form id="login-form" method="POST" action="login_handler.php">
                 <h1 class="heading">Login</h1>
 
+                <?php
+                    if (isset($_SESSION['message'])) {
+                        echo "<div id='error'>{$_SESSION['message']}</div>";
+                        unset($_SESSION['message']);
+                    }
+                ?>
+
                 <div class="login-form-row">
                     <label class="login-label" for="username">Please enter your username</label>
-                    <input id="username" type="text"  name="username"  placeholder="Username">
+                    <input id="username" type="text"  name="username" value="<?php echo $username; ?>"  placeholder="Username">
                 </div>
                 <div class="login-form-row">
                     <label class="login-label" for="password">Please enter your password</label>

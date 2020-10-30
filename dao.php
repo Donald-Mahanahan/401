@@ -47,10 +47,28 @@ class Dao{
         return $conn->query("select task from task", PDO::FETCH_ASSOC);
       }
 
-      public function getUsername() {
+    // public function getUsername() {
+    //     $conn = $this->getConnection();
+    //     return $conn->query("select task from task", PDO::FETCH_ASSOC);
+    //   }
+
+    public function userExists($user, $pwd){
         $conn = $this->getConnection();
-        return $conn->query("select task from task", PDO::FETCH_ASSOC);
-      }
+        if(is_null($conn)) {
+            return;
+        }
+        try{
+            $query = "Select user_id from users where username = :user and password = :pwd";
+            $execute = $conn->prepare($query);
+            $execute->bindParam(":user", $user);
+            $execute->bindParam(":pwd", $pwd);
+            $execute->execute();
+            $result = $execute->fetch(PDO::FETCH_ASSOC);
+            return $result;
+        }  catch (PDOException $e) {
+            throw new \PDOException($e->getMessage(), (int)$e->getCode());
+        }
+    }
 
     
 }
