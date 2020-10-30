@@ -1,8 +1,8 @@
 <?php
   session_start();
-  $username = "";
+  $userName = "";
   if(isset($_SESSION['form'])){
-      $username = $_SESSION['form']['username'];
+      $userName = $_SESSION['form']['userName'];
   }
 ?>
  
@@ -42,8 +42,8 @@
                 ?>
 
                 <div class="login-form-row">
-                    <label class="login-label" for="username">Please enter your username</label>
-                    <input id="username" type="text"  name="username" value="<?php echo $username; ?>"  placeholder="Username">
+                    <label class="login-label" for="userName">Please enter your username</label>
+                    <input id="userName" type="text"  name="userName" value="<?php echo $userName; ?>"  placeholder="Username">
                 </div>
                 <div class="login-form-row">
                     <label class="login-label" for="password">Please enter your password</label>
