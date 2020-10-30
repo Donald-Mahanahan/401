@@ -1,5 +1,5 @@
 <?php
- require_once dirname(__FILE__). '/../handlers/Dao.php';
+ require_once dirname(__FILE__). '/Dao.php';
 
  session_start();
  
@@ -45,7 +45,4 @@ if($results){
     header("Location: https://polar-sands-59708.herokuapp.com/login.php");
     exit;
 }
-
-// redirect back to the comments page
-// header("Location: http://cs401/comments.php");
 ?>
