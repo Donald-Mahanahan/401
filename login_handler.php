@@ -1,5 +1,6 @@
 <?php
- require_once dirname(__FILE__). '/Dao.php';
+//  require_once dirname(__FILE__). '/Dao.php';
+ require_once '/Dao.php';
 
  session_start();
  
