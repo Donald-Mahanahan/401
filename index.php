@@ -40,15 +40,14 @@
      <div class="header" style="height:100%">
          Planski
          <img src="images\android-chrome-192x192.png" alt="Italian Trulli" style="height:50px">
-        
-         <?php
-        $userName = $dao->getUsername($_SESSION['user_id']);
-        echo "<p>{$userName['userName']}</p>";
-        ?>
      </div>
 
      <div class="row">
          <div class="column1">
+                <?php
+                $userName = $dao->getUsername($_SESSION['user_id']);
+                echo "<p> Welcome {$userName['userName']}</p>";
+                ?>
              <form method="POST" action="/task_handler.php">
                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                  <label for="vehicle1"> This</label><br>
