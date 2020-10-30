@@ -70,6 +70,23 @@ class Dao{
         }
     }
 
+    public function getUsername($user_id){
+        $conn = $this->getConnection();
+        if(is_null($conn)) {
+            return;
+        }
+        try{
+            $query = "Select userName from user where user_id = user_id";
+            $execute = $conn->prepare($query);
+            $execute->bindParam("user_id", $user_id);
+            $execute->execute();
+            $result = $execute->fetch(PDO::FETCH_ASSOC);
+            return $result;
+        }  catch (PDOException $e) {
+            throw new PDOException($e->getMessage(), (int)$e->getCode());
+        }
+    }
+
     
 }
 
