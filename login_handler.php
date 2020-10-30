@@ -5,7 +5,7 @@
 $rootDir = realpath($_SERVER["DOCUMENT_ROOT"]);
 echo $rootDir;
 
-include "$rootDir/yourfile.php";
+include "$rootDir/dao.php";
 
 // require_once dirname(__FILE__). '/../dao.php';
 // //  require_once '/Dao.php';
