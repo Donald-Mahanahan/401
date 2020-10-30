@@ -20,6 +20,7 @@
 //     header("Location: https://polar-sands-59708.herokuapp.com/login.php");
 //     exit();
 
+echo "test error1";
 if(!preg_match($regex,$_POST['userName']) || !preg_match($regex,$_POST['password'])){
   $_SESSION['auth'] = false;
   $_SESSION['message'] = "Invalid username or password. They must be 1 - 20 characters long and contain alpha-numeric characters only";
@@ -27,6 +28,8 @@ if(!preg_match($regex,$_POST['userName']) || !preg_match($regex,$_POST['password
   header("Location: https://polar-sands-59708.herokuapp.com/login.php");
   exit;
 }
+
+echo "test error1";
 
 $results = $dao->userExists($_POST['userName'], $_POST['password']);
 print_r($results);
