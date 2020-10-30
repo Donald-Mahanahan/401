@@ -43,7 +43,7 @@
         
          <?php
         $userName = $dao->getUsername($_SESSION['user_id']);
-        echo "<p>{$userName['name']}</p>";
+        echo "<p>{$userName['userName']}</p>";
         ?>
      </div>
 
