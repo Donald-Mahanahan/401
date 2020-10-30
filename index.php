@@ -19,7 +19,7 @@
 
  <head>
      <title>PlanskiXXX</title>
-     <a id="logout" href="/logout_Handler.php">
+     <a id="logout" href="/logout_handler.php">
         <p>Logout</p>
     </a>
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.css" />
