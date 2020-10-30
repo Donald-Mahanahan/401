@@ -19,6 +19,9 @@
 
  <head>
      <title>PlanskiXXX</title>
+     <a id="logout" href="/logout_Handler.php">
+        <p>Logout</p>
+    </a>
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.css" />
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.midnight-blue.css" />
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.royal-navy.css" />
