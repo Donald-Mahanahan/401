@@ -6,7 +6,7 @@
 
  session_start();
  
- $dao = new Dao();
+//  $dao = new Dao();
  
  $regex = "/\w{1,20}/";
 
