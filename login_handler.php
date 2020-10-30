@@ -29,7 +29,7 @@ if(!preg_match($regex,$_POST['userName']) || !preg_match($regex,$_POST['password
 }
 
 $results = $dao->userExists($_POST['userName'], $_POST['password']);
-print_r($users);
+print_r($results);
 
 
 // $dao = new Dao();
