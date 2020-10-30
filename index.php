@@ -4,6 +4,11 @@
     error_reporting(E_ALL);
         ini_set('display_errors', 1);
     $dao = new Dao();
+
+    if (!isset($_SESSION['auth']) || !$_SESSION['auth'] ||!isset($_SESSION['user_id']))  {
+        header("Location: https://frozen-ravine-42740.herokuapp.com/pages/login.php");
+        exit;
+    }
  ?>
  
  
@@ -35,7 +40,11 @@
      <div class="header" style="height:100%">
          Planski
          <img src="images\android-chrome-192x192.png" alt="Italian Trulli" style="height:50px">
-
+        
+         <?php
+                    $username = $dao->getUsername($_SESSION['user_id']);
+                    echo "<p>{$userName['name']}</p>";
+        ?>
      </div>
 
      <div class="row">
