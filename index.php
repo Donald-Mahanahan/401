@@ -6,7 +6,7 @@
     $dao = new Dao();
 
     if (!isset($_SESSION['auth']) || !$_SESSION['auth'] ||!isset($_SESSION['user_id']))  {
-        header("Location: https://frozen-ravine-42740.herokuapp.com/pages/login.php");
+        header("Location: https://polar-sands-59708.herokuapp.com/login.php");
         exit;
     }
  ?>
