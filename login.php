@@ -34,12 +34,6 @@
             <form  method="POST" action="/login_handler.php">
                 <h1 class="heading">Login</h1>
 
-                <?php
-                    if (isset($_SESSION['message'])) {
-                        echo "<div id='error'>{$_SESSION['message']}</div>";
-                        unset($_SESSION['message']);
-                    }
-                ?>
 
                 <div>
                     <label for="userName">Please enter your username</label>
