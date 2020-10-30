@@ -42,8 +42,8 @@
          <img src="images\android-chrome-192x192.png" alt="Italian Trulli" style="height:50px">
         
          <?php
-                    $username = $dao->getUsername($_SESSION['user_id']);
-                    echo "<p>{$userName['name']}</p>";
+        $userName = $dao->getUsername($_SESSION['user_id']);
+        echo "<p>{$userName['name']}</p>";
         ?>
      </div>
 
