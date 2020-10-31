@@ -26,7 +26,7 @@ if (strlen($_POST['task']) > 256) {
 }
 
 if (count($_SESSION['bad']) > 0) {
-  header("Location: http://cs401/comments.php");
+  header("Location: https://polar-sands-59708.herokuapp.com/");
   exit();
 }
 
