@@ -36,7 +36,7 @@ class Dao{
 
     public function addTask($task) {
         $conn = $this->getConnection();
-        $saveQuery = "insert into task (user_id, event_date, task) values (1,'2020-10-07', 'added')";
+        $saveQuery = "insert into task (user_id, event_date, task) values (1, CURDATE(), 'added')";
         $q = $conn->prepare($saveQuery);
         $q->bindParam("task", $task);
         $q->execute();
