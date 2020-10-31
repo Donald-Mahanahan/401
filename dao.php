@@ -26,7 +26,7 @@ class Dao{
         if(is_null($conn)) {
             return;
         }     
-            $query = "Select task from task;";
+            $query = "Select * from task;";
             $execute = $conn->prepare($query);
             
             $execute->execute();
@@ -37,6 +37,14 @@ class Dao{
     public function addTask($task) {
         $conn = $this->getConnection();
         $saveQuery = "insert into task (user_id, event_date, task) values (1,'2020-10-07', 'added')";
+        $q = $conn->prepare($saveQuery);
+        $q->bindParam("task", $task);
+        $q->execute();
+    }
+
+    public function deleteTask($task) {
+        $conn = $this->getConnection();
+        $saveQuery = "delete from task where";
         $q = $conn->prepare($saveQuery);
         $q->bindParam("task", $task);
         $q->execute();
