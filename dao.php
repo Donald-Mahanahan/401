@@ -26,7 +26,7 @@ class Dao{
         if(is_null($conn)) {
             return;
         }     
-            $query = "Select * from user;";
+            $query = "Select * from task;";
             $execute = $conn->prepare($query);
             
             $execute->execute();

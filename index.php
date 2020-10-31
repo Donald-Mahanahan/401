@@ -69,8 +69,8 @@
                  
                  
                  <?php
-                  $users = $dao->test();
-                  print_r($users);
+                  $task = $dao->test();
+                  print_r($task);
                 //   echo $users[0];
                  ?>
                  
