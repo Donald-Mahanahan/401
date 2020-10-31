@@ -1,12 +1,14 @@
 <?php
 error_reporting(E_ALL);
   ini_set('display_errors', 1);
-session_start();
+
 
 $rootDir = realpath($_SERVER["DOCUMENT_ROOT"]);
 require_once "$rootDir/dao.php"
 // require_once 'KLogger.php';
 // $logger = new KLogger ("log.txt" , KLogger::DEBUG);
+
+session_start();
 $_SESSION['bad'] = array();
 $_SESSION['good'] = array();
 
