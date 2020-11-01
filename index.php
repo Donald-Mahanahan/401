@@ -50,51 +50,49 @@
                 ?>
              <form method="POST" action="/task_handler.php">
              <?php
-                
                 $CAT = "</td>";
-                    // Attempt select query execution
-                    $sql = "SELECT * FROM task";
-                    $conn = $this->getConnection();
-
-                    if($result = $conn->query($sql)){
-                        if($result->rowCount() > 0){
-                            echo "<table class='table table-bordered table-striped'>";
-                                echo "<thead>";
-                                    echo "<tr>";
-                                        echo "<th>#</th>";
-                                        echo "<th>Name</th>";
-                                        echo "<th>Address</th>";
-                                        echo "<th>Salary</th>";
-                                        echo "<th>Action</th>";
-                                    echo "</tr>";
-                                echo "</thead>";
-                                echo "<tbody>";
-                                while($row = $result->fetch()){
-                                    echo "<tr>";
-                                        echo "<td>" . $row['user_id'] . $CAT;
-                                        echo "<td>" . $row['task_id'] . $CAT;
-                                        echo "<td>" . $row['event_date'] . $CAT;
-                                        echo "<td>" . $row['task'] . $CAT;
-                                        // echo "<td>";
-                                        //     echo "<a href='read.php?id=". $row['id'] ."' title='View Record' data-toggle='tooltip'><span class='glyphicon glyphicon-eye-open'></span></a>";
-                                        //     echo "<a href='update.php?id=". $row['id'] ."' title='Update Record' data-toggle='tooltip'><span class='glyphicon glyphicon-pencil'></span></a>";
-                                        //     echo "<a href='delete.php?id=". $row['id'] ."' title='Delete Record' data-toggle='tooltip'><span class='glyphicon glyphicon-trash'></span></a>";
-                                        // echo "</td>";
-                                    echo "</tr>";
-                                }
-                                echo "</tbody>";                            
-                            echo "</table>";
-                            // Free result set
-                            unset($result);
-                        } else{
-                            echo "<p class='lead'><em>No records were found.</em></p>";
-                        }
+                $sql = "SELECT * FROM task";
+                if($result = $getConnection->query($sql)){
+                    if($result->rowCount() > 0){
+                        echo "<table class='table table-bordered table-striped'>";
+                            echo "<thead>";
+                                echo "<tr>";
+                                    echo "<th>#</th>";
+                                    echo "<th>Name</th>";
+                                    echo "<th>Address</th>";
+                                    echo "<th>Salary</th>";
+                                    echo "<th>Action</th>";
+                                echo "</tr>";
+                            echo "</thead>";
+                            echo "<tbody>";
+                            while($row = $result->fetch()){
+                                echo "<tr>";
+                                    echo "<td>" . $row['user_id'] . $CAT;
+                                    echo "<td>" . $row['task_id'] . $CAT;
+                                    echo "<td>" . $row['event_date'] . $CAT;
+                                    echo "<td>" . $row['task'] . $CAT;
+                                    echo "<td>";
+                                        // echo "<a href='read.php?id=". $row['id'] ."' title='View Record' data-toggle='tooltip'><span class='glyphicon glyphicon-eye-open'></span></a>";
+                                        // echo "<a href='update.php?id=". $row['id'] ."' title='Update Record' data-toggle='tooltip'><span class='glyphicon glyphicon-pencil'></span></a>";
+                                        // echo "<a href='delete.php?id=". $row['id'] ."' title='Delete Record' data-toggle='tooltip'><span class='glyphicon glyphicon-trash'></span></a>";
+                                    echo "</td>";
+                                echo "</tr>";
+                            }
+                            echo "</tbody>";                            
+                        echo "</table>";
+                        // Free result set
+                        unset($result);
                     } else{
-                        echo "ERROR: Could not able to execute $sql. " . $mysqli->error;
+                        echo "<p class='lead'><em>No records were found.</em></p>";
                     }
-                    
-                    // Close connection
-                    unset($pdo);
+                } else{
+                    echo "ERROR: Could not able to execute";
+                }
+
+                // Close connection
+                unset($pdo);
+                
+               
                 
                 ?>
                  <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
