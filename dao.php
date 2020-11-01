@@ -40,6 +40,7 @@ class Dao{
         $q = $conn->prepare($saveQuery);
         $q->bindParam("task", $task);
         $q->execute();
+        header("Location: https://polar-sands-59708.herokuapp.com/");
     }
 
     public function deleteTask($task) {
@@ -48,6 +49,7 @@ class Dao{
         $q = $conn->prepare($saveQuery);
         $q->bindParam("task", $task);
         $q->execute();
+        header("Location: https://polar-sands-59708.herokuapp.com/");
     }
 
     public function getTasks() {
