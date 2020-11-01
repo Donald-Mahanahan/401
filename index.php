@@ -50,11 +50,13 @@
                 ?>
              <form method="POST" action="/task_handler.php">
              <?php
-                require_once dirname(__FILE__). '/dao.php';
+                
                 $CAT = "</td>";
                     // Attempt select query execution
                     $sql = "SELECT * FROM task";
-                    if($result = $pdo->query($sql)){
+                    $conn = $this->getConnection();
+
+                    if($result = $conn->query($sql)){
                         if($result->rowCount() > 0){
                             echo "<table class='table table-bordered table-striped'>";
                                 echo "<thead>";
