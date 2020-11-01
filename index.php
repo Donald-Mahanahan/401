@@ -50,6 +50,7 @@
                 ?>
              <form method="POST" action="/task_handler.php">
              <?php
+                require_once "/dao.php";
                 $CAT = "</td>";
                     // Attempt select query execution
                     $sql = "SELECT * FROM task";
