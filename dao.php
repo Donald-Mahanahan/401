@@ -29,20 +29,22 @@ class Dao{
         }     
             $query = "Select * from task;";
             $execute = $conn->prepare($query);
+            $execute->execute();
+            // $result = $execute->fetchAll(PDO::FETCH_ASSOC);
+            
             $out = '';
             $cnt = 0;
-            // if ($result->num_rows > 0) {
-            //     // output data of each row
-            //     while($row = $result->fetch_assoc()) {
-            //         $cnt++;
-            //         $out .= '<input id="cb_' .$cnt. '" class="someclass" type="checkbox" />' .$row['degree_name']. '<br/>';
-            //     }
-            //     echo $out;
-            // } 
+            if ($execute->num_rows > 0) {
+                // output data of each row
+                while($row = $execute->fetch()) {
+                    $cnt++;
+                    $out .= '<input id="cb_' .$cnt. '" class="someclass" type="checkbox" />' .$row['degree_name']. '<br/>';
+                }
+                echo $out;
+            } 
             
-            $execute->execute();
-            $result = $execute->fetchAll(PDO::FETCH_ASSOC);
-            return $result;   
+            
+            return $execute;   
     }   
 
     public function addTask($task) {
