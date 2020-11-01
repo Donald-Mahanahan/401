@@ -36,7 +36,7 @@ class Dao{
                 // output data of each row
                 while($row = $execute->fetch()) {
                     $cnt++;
-                    $out .= '<input id="cb_' .$cnt. '" class="someclass" type="checkbox" />' .$row['degree_name']. '<br/>';
+                    $out .= '<input id="cb_' .$cnt. '" class="someclass" type="checkbox" />' .$row[0]. '<br/>';
                 }
                 echo $out;
             } 
