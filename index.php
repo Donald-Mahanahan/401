@@ -48,7 +48,7 @@
                 $userName = $dao->getUsername($_SESSION['user_id']);
                 echo "<p> Welcome {$userName['userName']}</p>";
                 ?>
-             <form method="POST" action="/task_handler.php">
+             <form method="POST" action="/dao.php">
                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                  <label for="vehicle1"> This</label><br>
                  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
