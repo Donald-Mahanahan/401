@@ -20,6 +20,7 @@ class Dao{
             throw new \PDOException($e->getMessage(), (int)$e->getCode());
         }
     }
+    
 
     public function test(){
         $conn = $this->getConnection();
@@ -28,6 +29,16 @@ class Dao{
         }     
             $query = "Select * from task;";
             $execute = $conn->prepare($query);
+            $out = '';
+            $cnt = 0;
+            // if ($result->num_rows > 0) {
+            //     // output data of each row
+            //     while($row = $result->fetch_assoc()) {
+            //         $cnt++;
+            //         $out .= '<input id="cb_' .$cnt. '" class="someclass" type="checkbox" />' .$row['degree_name']. '<br/>';
+            //     }
+            //     echo $out;
+            // } 
             
             $execute->execute();
             $result = $execute->fetchAll(PDO::FETCH_ASSOC);
