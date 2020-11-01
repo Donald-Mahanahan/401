@@ -65,7 +65,7 @@
                  <label for="vehicle3"> This will look nicer later I promise</label><br><br>
                  <div>Task: <input type="text" name="task" id="task"/></div>
                  <button type="AddTask">Add Task</button>
-                 <button type="Delete">Delete Task</button>
+                 <button type="DeleteTask">Delete Task</button>
                  
                  
                  <?php
