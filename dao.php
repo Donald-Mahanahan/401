@@ -28,13 +28,11 @@ class Dao{
             return;
         }     
             $query = "Select * from task;";
-            $execute = $conn->prepare($query);
-            $execute->execute();
-            // $result = $execute->fetchAll(PDO::FETCH_ASSOC);
+            $execute = $conn->query($query);
             
             $out = '';
             $cnt = 0;
-            if ($execute->num_rows > 0) {
+            if ($execute->rowCount() > 0) {
                 // output data of each row
                 while($row = $execute->fetch()) {
                     $cnt++;
