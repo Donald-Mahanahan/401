@@ -49,7 +49,9 @@
                 echo "<p> Welcome {$userName['userName']}</p>";
                 ?>
              <form method="POST" action="/task_handler.php">
-                <?php
+             <?php
+                $CAT = "</td>";
+                    // Attempt select query execution
                     $sql = "SELECT * FROM task";
                     if($result = $pdo->query($sql)){
                         if($result->rowCount() > 0){
@@ -60,18 +62,38 @@
                                         echo "<th>Name</th>";
                                         echo "<th>Address</th>";
                                         echo "<th>Salary</th>";
-                                        
+                                        echo "<th>Action</th>";
                                     echo "</tr>";
                                 echo "</thead>";
                                 echo "<tbody>";
                                 while($row = $result->fetch()){
                                     echo "<tr>";
-                                        echo "<td>" . $row['user_id'] . "</td>";
-                                        echo "<td>" . $row['task_id'] . "</td>";
-                                        echo "<td>" . $row['event_date'] . "</td>";
-                                        echo "<td>" . $row['task'] . "</td>";
-                ?>
+                                        echo "<td>" . $row['user_id'] . $CAT;
+                                        echo "<td>" . $row['task_id'] . $CAT;
+                                        echo "<td>" . $row['event_date'] . $CAT;
+                                        echo "<td>" . $row['task'] . $CAT;
+                                        // echo "<td>";
+                                        //     echo "<a href='read.php?id=". $row['id'] ."' title='View Record' data-toggle='tooltip'><span class='glyphicon glyphicon-eye-open'></span></a>";
+                                        //     echo "<a href='update.php?id=". $row['id'] ."' title='Update Record' data-toggle='tooltip'><span class='glyphicon glyphicon-pencil'></span></a>";
+                                        //     echo "<a href='delete.php?id=". $row['id'] ."' title='Delete Record' data-toggle='tooltip'><span class='glyphicon glyphicon-trash'></span></a>";
+                                        // echo "</td>";
+                                    echo "</tr>";
+                                }
+                                echo "</tbody>";                            
+                            echo "</table>";
+                            // Free result set
+                            unset($result);
+                        } else{
+                            echo "<p class='lead'><em>No records were found.</em></p>";
+                        }
+                    } else{
+                        echo "ERROR: Could not able to execute $sql. " . $mysqli->error;
+                    }
+                    
+                    // Close connection
+                    unset($pdo);
                 
+                ?>
                  <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                  <label for="vehicle1"> This</label><br>
                  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
@@ -85,8 +107,8 @@
                  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
                  <label for="vehicle2"> on the calendar view</label><br>
                  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                 <label for="vehicle3"> This will look nicer later I promise</label><br><br>
-                 <div>Task: <input type="text" name="task" id="task"/></div> -->
+                 <label for="vehicle3"> This will look nicer later I promise</label><br><br> -->
+                 <div>Task: <input type="text" name="task" id="task"/></div>
                  <button type="AddTask">Add Task</button>
                  <button type="DeleteTask">Delete Task</button>
                  
@@ -126,4 +148,4 @@
 
  </body>
 
- </html>
+ </html
