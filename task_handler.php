@@ -32,7 +32,7 @@ if (count($_SESSION['bad']) > 0) {
 
 $dao = new Dao();
 $dao->addTask($_POST['task']);
-$dao->deleteTask($_POST['task']);
+// $dao->deleteTask($_POST['task']);
 $_SESSION['good'][] = "Thank you for posting";
 
 // redirect back to the comments page
