@@ -76,7 +76,7 @@
                  
                  
              </form>
-             
+
              <form method="POST" action="/delete_handler.php">
              <button type="DeleteTask">Delete Task</button>
             </form>

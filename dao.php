@@ -47,9 +47,9 @@ class Dao{
 
     public function addTask($task) {
         $conn = $this->getConnection();
-        $saveQuery = "insert into task (user_id, event_date, task) values (1, CURDATE(), 'added')";
+        $saveQuery = "insert into task (user_id, event_date, task) values (1, CURDATE(), ?)";
         $q = $conn->prepare($saveQuery);
-        $q->bindParam("task", $task);
+        $q->bindParam("s", $task);
         $q->execute();
         
     }
@@ -57,9 +57,9 @@ class Dao{
     public function deleteTask($task) {
         $conn = $this->getConnection();
         // $saveQuery = "delete from task order by task_id desc limit 1";
-        $saveQuery = "delete from task where task='added'";
+        $saveQuery = "delete from task where task=?";
         $q = $conn->prepare($saveQuery);
-        // $q->bindParam("task", $task);
+        $q->bindParam("s", $task);
         $q->execute();
     }
 
