@@ -31,12 +31,14 @@ if (count($_SESSION['bad']) > 0) {
 }
 
 $dao = new Dao();
+
 if($_POST["addTask"]) {
-  //User hit the save button, handle accordingly
+  echo "error1";
   $dao->addTask($_POST['task']);
 }
 //You can do an else, but I prefer a separate statement
 if($_POST["deleteTask"]) {
+  echo "error2";
   //User hit the Submit for Approval button, handle accordingly
   $dao->deleteTask($_POST['task']);
 }

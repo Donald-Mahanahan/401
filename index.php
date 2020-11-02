@@ -72,8 +72,8 @@
 
                  ?>
                  <div>Task: <input type="text" name="task" id="task"/></div>
-                 <button type="submit" name="addTask">Add Task</button>
-                 <button type="submit" name="deleteTask">Delete Task</button>
+                 <input type="submit" name="addTask" value="Add Task"/>
+                 <input type="submit" name="deleteTask" value="Add Task"/>
             </form>
              
          </div>
