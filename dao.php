@@ -57,9 +57,9 @@ class Dao{
     public function deleteTask($task) {
         $conn = $this->getConnection();
         // $saveQuery = "delete from task order by task_id desc limit 1";
-        $saveQuery = "delete from task where task=?";
+        $saveQuery = "delete from task where task=:task";
         $q = $conn->prepare($saveQuery);
-        $q->bindParam("s", $task);
+        $q->bindParam(":task", $task);
         $q->execute();
     }
 
