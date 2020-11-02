@@ -73,13 +73,12 @@
                  ?>
                  <div>Task: <input type="text" name="task" id="task"/></div>
                  <button type="AddTask">Add Task</button>
-                 
-                 
-             </form>
-
-             <form method="POST" action="/delete_handler.php">
-             <button type="DeleteTask">Delete Task</button>
+                 <form method="POST" action="/delete_handler.php">
+                    <button type="DeleteTask">Delete Task</button>
+                </form>
             </form>
+
+             
              
          </div>
          <div class="column2">
