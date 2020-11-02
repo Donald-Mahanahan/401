@@ -17,18 +17,18 @@ $_SESSION['good'] = array();
 // validating
 
 
-if (strlen($_POST['task']) == 0) {
-  $_SESSION['bad'][] = "Please enter a comment";
-}
+// if (strlen($_POST['task']) == 0) {
+//   $_SESSION['bad'][] = "Please enter a comment";
+// }
 
-if (strlen($_POST['task']) > 256) {
-  $_SESSION['bad'][] = "Comment is too long.";
-}
+// if (strlen($_POST['task']) > 256) {
+//   $_SESSION['bad'][] = "Comment is too long.";
+// }
 
-if (count($_SESSION['bad']) > 0) {
-  header("Location: https://polar-sands-59708.herokuapp.com/");
-  exit();
-}
+// if (count($_SESSION['bad']) > 0) {
+//   header("Location: https://polar-sands-59708.herokuapp.com/");
+//   exit();
+// }
 
 $dao = new Dao();
 
