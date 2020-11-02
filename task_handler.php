@@ -31,8 +31,16 @@ if (count($_SESSION['bad']) > 0) {
 }
 
 $dao = new Dao();
-$dao->addTask($_POST['task']);
-// $dao->deleteTask($_POST['task']);
+if($_POST["addTask"]) {
+  //User hit the save button, handle accordingly
+  $dao->addTask($_POST['task']);
+}
+//You can do an else, but I prefer a separate statement
+if($_POST["deleteTask"]) {
+  //User hit the Submit for Approval button, handle accordingly
+  $dao->deleteTask($_POST['task']);
+}
+
 $_SESSION['good'][] = "Thank you for posting";
 
 // redirect back to the comments page
