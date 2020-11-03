@@ -51,8 +51,7 @@
                  <div>Task: <input type="text" name="task" id="task"/></div>
                  <div class="login-form-row">
                     <input id="addTask" type="submit" name="addTask" value="Add Task"/> 
-                 </div>
-                 <div class="login-form-row">
+                 
                     <input id="deleteTask" type="submit" name="deleteTask" value="Delete Task"/>
                  </div>
                  
