@@ -186,7 +186,7 @@ body {
 
 #addTask, #deleteTask {
   border-radius: 15px;
-  background: #42b0f5;
+  background: #5693b3;
   border: black solid 1px;
   padding: 10px;
   text-align: center;
@@ -197,7 +197,7 @@ body {
   border: none;
   padding: 10px 20px;
   margin-bottom: 25px;
-  background: #42b0f5;
+  background:#5693b3;
   color: #ffffff;
 }
 
