@@ -206,5 +206,12 @@ body {
   margin-left: 15px;
   margin-top:10px;
   margin-bottom: 10px;
+}
 
+.task {
+  border-radius: 15px;
+  background: #ddd;
+  border: black solid 1px;
+  padding: 10px;
+  text-align: center;
 }
