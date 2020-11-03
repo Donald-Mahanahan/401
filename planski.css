@@ -55,6 +55,17 @@ body {
   /* height: 500px;  */
 }
 
+.column1Login3 {
+  background-color:#bac4c9;
+  border-style: solid;
+  float: left;
+  width: 33%;
+  padding-left: 25px;
+  padding-top: 50px;
+  min-width: 180px;
+  /* height: 500px;  */
+}
+
 .column2 {
   text-align: center;
   border-style: solid;
