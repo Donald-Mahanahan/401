@@ -29,8 +29,13 @@
          <img src="images\android-chrome-192x192.png" alt="Italian Trulli" style="height:50px">
      </div>
 
+
+
      <div class="row">
-         <div class="column1Login">
+         <div class ="column1Login1">
+             
+         </div>
+         <div class="column1Login2">
             <form  method="POST" action="/login_handler.php">
                 <h1 class="heading">Login</h1>
                 <div>
