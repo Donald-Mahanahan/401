@@ -49,9 +49,7 @@
                 </div>
             </form>
         </div>
-        <div class="column1Login3">
 
-        </div>
 
      </div>
 
