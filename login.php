@@ -25,7 +25,7 @@
  <body>
 
      <div class="header" style="height:100%">
-         PlanskiXXX
+         Planski
          <img src="images\android-chrome-192x192.png" alt="Italian Trulli" style="height:50px">
      </div>
 
