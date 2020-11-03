@@ -12,7 +12,7 @@ body {
   background-color:#bac4c9;
 }
 
-/* Style the header */
+
 .header {
   height: 90px;
   border-style: solid;
@@ -22,7 +22,16 @@ body {
   font-size: 4vw;
 }
 
-/* Create three equal columns that floats next to each other */
+.header-login {
+  height: 90px;
+  border-style: solid;
+  background-color:#5693b3;
+  padding: 30px;
+  text-align: left;
+  font-size: 4vw;
+}
+
+
 .column1 {
   background-color:#bac4c9;
   border-style: solid;
@@ -41,7 +50,7 @@ body {
   padding-left: 25px;
   padding-top: 50px;
   min-width: 180px;
-  /* height: 500px;  */
+  height: 475px; 
 }
 
 .column1Login2 {
@@ -54,7 +63,7 @@ body {
   padding-bottom: 50px;
   padding-top: 50px; */
   min-width: 350px;
-  /* height: 500px;  */
+  height: 475px; 
 }
 
 .column1Login3 {
@@ -81,7 +90,7 @@ body {
   /* height: 500px; */
 }
 
-/* Clear floats after the columns */
+
 .row:after {
   /* height: 350px; */
   content: "";
@@ -89,7 +98,6 @@ body {
   clear: both;
 }
 
-/* Style the footer */
 .footer {
   border-style: solid;
   background-color: #e4dede;
@@ -98,7 +106,14 @@ body {
   height: 225px;
 }
 
-/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+.footer-Login {
+  border-style: solid;
+  background-color: #e4dede;
+  padding: 10px;
+  text-align: center;
+  height: 300px;
+}
+
 @media (max-width: 600px) {
   .column {
     width: 100%;
@@ -120,7 +135,7 @@ body {
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
   background: #ffffff;
   border-radius: 15px;
-  margin: 0px;
+  margin-top: 75px;
 }
 
 .heading {

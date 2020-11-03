@@ -54,7 +54,7 @@
      </div>
 
 
-     <div class="footer">
+     <div class="footer-login">
          Copyright 2020 &copy;
      </div>
 
