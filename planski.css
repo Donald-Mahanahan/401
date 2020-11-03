@@ -111,7 +111,7 @@ body {
   background-color: #e4dede;
   padding: 10px;
   text-align: center;
-  height: 300px;
+  height: 320px;
 }
 
 @media (max-width: 600px) {
@@ -135,7 +135,7 @@ body {
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
   background: #ffffff;
   border-radius: 15px;
-  margin: 0px;
+  margin-top: 50px;
 }
 
 .heading {
