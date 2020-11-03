@@ -21,7 +21,7 @@
  <head>
      <title>Planski</title>
      <a href="/logout_handler.php">
-        <div id="logout-button">Logout</div>
+        <p>>Logout</p>
     </a>
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.css" />
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.midnight-blue.css" />
@@ -44,7 +44,7 @@
                 $userName = $dao->getUsername($_SESSION['user_id']);
                 echo "<p> Welcome {$userName['userName']}</p>";
                 ?>
-             <form method="POST" action="/task_handler.php">
+             <form id="login-form" method="POST" action="/task_handler.php">
                  <?php
                   $task = $dao->test();
                  ?>
