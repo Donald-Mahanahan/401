@@ -40,10 +40,13 @@
 
      <div class="row">
          <div class="column1">
+            <div class="login-form-row">
                 <?php
                 $userName = $dao->getUsername($_SESSION['user_id']);
-                echo "<p> Welcome {$userName['userName']}</p>";
+                echo "<h1 class='heading'> Welcome {$userName['userName']}</h1>";
                 ?>
+            </div>
+                
              <form id="login-form" method="POST" action="/task_handler.php">
                  <?php
                   $task = $dao->test();
