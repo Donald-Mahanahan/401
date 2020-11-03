@@ -173,3 +173,8 @@ body {
   background: #42b0f5;
   color: #ffffff;
 }
+
+.logout-button {
+  padding-left: 5px;
+  
+}
