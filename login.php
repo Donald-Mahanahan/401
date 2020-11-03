@@ -44,7 +44,7 @@
                     <label  for="password"></label>
                     <input id="password" type="password"  name="password" placeholder="Password">
                 </div>
-                <div >
+                <div class="login-form-row" >
                     <input id="login-submit"  type="submit" value="Login">
                 </div>
             </form>
