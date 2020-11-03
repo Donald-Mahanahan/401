@@ -142,7 +142,7 @@ body {
       margin-left: 0px;
 }
 
-#username, #password {
+#userName, #password {
   border-radius: 15px;
   background: #ddd;
   border: black solid 1px;
