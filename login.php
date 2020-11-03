@@ -34,13 +34,13 @@
      <div class="row">
 
          <div class="column1Login2">
-            <form  method="POST" action="/login_handler.php">
+            <form id="login-form" method="POST" action="/login_handler.php">
                 <h1 class="heading">Login</h1>
-                <div>
+                <div class="login-form-row">
                     <label for="userName">Please enter your username</label>
                     <input id="userName" type="text"  name="userName" value="<?php echo $userName; ?>"  placeholder="Username">
                 </div>
-                <div >
+                <div class="login-form-row" >
                     <label  for="password">Please enter your password</label>
                     <input id="password" type="password"  name="password" placeholder="Password">
                 </div>

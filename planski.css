@@ -107,6 +107,54 @@ body {
 
 }
 
-.logout {
+.container {
+  width: 400px;
+  margin: 30px auto;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+}
 
+.login-form {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  background: #ffffff;
+  border-radius: 15px;
+  margin: 0px;
+}
+
+.heading {
+  text-align: center;
+  padding: 30px 0px;
+  margin: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.login-form-row {
+  text-align: center;
+  margin: 30px 0px;
+      margin-top: 30px;
+      margin-right: 0px;
+      margin-bottom: 30px;
+      margin-left: 0px;
+}
+
+#username, #password {
+  border-radius: 15px;
+  background: #ddd;
+  border: black solid 1px;
+  padding: 10px;
+  text-align: center;
+}
+
+#login-submit {
+  border-radius: 15px;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+  background: #42b0f5;
+  color: #ffffff;
 }
