@@ -53,7 +53,7 @@
                     $task = $dao->test();
                     ?>
                  </div>
-                 <div class="login-form-row">Task: <input type="text" name="task" id="task"/></div>
+                 <div class="task-form-row">Task: <input type="text" name="task" id="task"/></div>
                  <div class="login-form-row">
                     <input id="addTask" type="submit" name="addTask" value="Add Task"/> 
                  
