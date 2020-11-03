@@ -47,7 +47,7 @@
                 ?>
             </div>
                 
-             <form id="login-form" method="POST" action="/task_handler.php">
+             <form id="task-form" method="POST" action="/task_handler.php">
                  <div class="task-form-row">
                     <?php
                     $task = $dao->testAddTask();

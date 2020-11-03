@@ -138,6 +138,13 @@ body {
   margin-top: 100px;
 }
 
+.task-form {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  background: #ffffff;
+  border-radius: 15px;
+  margin-top: 100px;
+}
+
 .heading {
   text-align: center;
   padding: 30px 0px;
