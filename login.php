@@ -33,8 +33,6 @@
          <div class="column1">
             <form  method="POST" action="/login_handler.php">
                 <h1 class="heading">Login</h1>
-
-
                 <div>
                     <label for="userName">Please enter your username</label>
                     <input id="userName" type="text"  name="userName" value="<?php echo $userName; ?>"  placeholder="Username">
