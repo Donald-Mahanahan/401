@@ -47,12 +47,12 @@ body {
 .column1Login2 {
   background-color:#bac4c9;
   border-style: solid;
-  float: left;
+  /* float: left;
   width: 33%;
   padding-left: 100px;
   padding-right:100px;
   padding-bottom: 50px;
-  padding-top: 50px;
+  padding-top: 50px; */
   min-width: 350px;
   /* height: 500px;  */
 }
