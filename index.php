@@ -40,7 +40,7 @@
 
      <div class="row">
          <div class="column1">
-            <div class="login-form-row">
+            <div class="task-form-row">
                 <?php
                 $userName = $dao->getUsername($_SESSION['user_id']);
                 echo "<h1 class='heading'> Welcome {$userName['userName']}</h1>";
@@ -48,7 +48,7 @@
             </div>
                 
              <form id="login-form" method="POST" action="/task_handler.php">
-                 <div class="login-form-row">
+                 <div class="task-form-row">
                     <?php
                     $task = $dao->test();
                     ?>
