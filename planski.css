@@ -165,7 +165,7 @@ body {
   text-align: center;
 }
 
-#addTask, #DeleteTask {
+#addTask, #deleteTask {
   border-radius: 15px;
   background: #42b0f5;
   border: black solid 1px;
