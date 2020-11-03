@@ -50,10 +50,12 @@
                 </div>
             </form>
         </div>
+        <div class="column1Login3">
+
+        </div>
+
      </div>
-     <div class="column1Login3">
-         
-     </div>
+
 
      <div class="footer">
          Copyright 2020 &copy;
