@@ -49,31 +49,12 @@
                 echo "<p> Welcome {$userName['userName']}</p>";
                 ?>
              <form method="POST" action="/task_handler.php">
-                 <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                 <label for="vehicle1"> This</label><br>
-                 <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                 <label for="vehicle2"> will be</label><br>
-                 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                 <label for="vehicle3"> information</label><br>
-                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                 <label for="vehicle1"> that mirrors</label><br>
-                 <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                 <label for="vehicle2"> the date selected</label><br>
-                 <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                 <label for="vehicle2"> on the calendar view</label><br>
-                 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                 <label for="vehicle3"> This will look nicer later I promise</label><br><br> -->
-
-                 
-                 
                  <?php
                   $task = $dao->test();
-                //   print_r($task);
-
                  ?>
                  <div>Task: <input type="text" name="task" id="task"/></div>
                  <input type="submit" name="addTask" value="Add Task"/>
-                 <input type="submit" name="deleteTask" value="Add Task"/>
+                 <input type="submit" name="deleteTask" value="Delete Task"/>
             </form>
              
          </div>
