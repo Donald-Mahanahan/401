@@ -49,8 +49,14 @@
                   $task = $dao->test();
                  ?>
                  <div>Task: <input type="text" name="task" id="task"/></div>
-                 <input id="addTask" type="submit" name="addTask" value="Add Task"/>
-                 <input id="deleteTask" type="submit" name="deleteTask" value="Delete Task"/>
+                 <div class="login-form-row">
+                    <input id="addTask" type="submit" name="addTask" value="Add Task"/> 
+                 </div>
+                 <div class="login-form-row">
+                    <input id="deleteTask" type="submit" name="deleteTask" value="Delete Task"/>
+                 </div>
+                 
+                 
             </form>
              
          </div>
