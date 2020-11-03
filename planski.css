@@ -148,6 +148,16 @@ body {
     margin-left: 0px;
 }
 
+.heading-index {
+  text-align: center;
+  padding: 30px 0px;
+  margin: 0px;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
 .login-form-row {
   text-align: center;
   margin: 30px 0px;

@@ -43,7 +43,7 @@
             <div class="task-form-row">
                 <?php
                 $userName = $dao->getUsername($_SESSION['user_id']);
-                echo "<h1 class='heading'> Welcome {$userName['userName']}</h1>";
+                echo "<h1 class='heading-index'> Welcome {$userName['userName']}</h1>";
                 ?>
             </div>
                 
