@@ -165,6 +165,14 @@ body {
   text-align: center;
 }
 
+#addTask, #DeleteTask {
+  border-radius: 15px;
+  background: #42b0f5;
+  border: black solid 1px;
+  padding: 10px;
+  text-align: center;
+}
+
 #login-submit {
   border-radius: 15px;
   border: none;
