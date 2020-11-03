@@ -37,11 +37,11 @@
             <form id="login-form" method="POST" action="/login_handler.php">
                 <h1 class="heading">Login</h1>
                 <div class="login-form-row">
-                    <label for="userName">Please enter your username</label>
+                    <label for="userName"></label>
                     <input id="userName" type="text"  name="userName" value="<?php echo $userName; ?>"  placeholder="Username">
                 </div>
                 <div class="login-form-row" >
-                    <label  for="password">Please enter your password</label>
+                    <label  for="password"></label>
                     <input id="password" type="password"  name="password" placeholder="Password">
                 </div>
                 <div >
