@@ -22,7 +22,7 @@ class Dao{
     }
     
 
-    public function test(){
+    public function testAddTask(){
         $conn = $this->getConnection();
         if(is_null($conn)) {
             return;

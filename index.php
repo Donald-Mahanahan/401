@@ -50,7 +50,7 @@
              <form id="login-form" method="POST" action="/task_handler.php">
                  <div class="task-form-row">
                     <?php
-                    $task = $dao->test();
+                    $task = $dao->testAddTask();
                     ?>
                  </div>
                  <div class="task-form-row">Task: <input type="text" name="task" id="task"/></div>
