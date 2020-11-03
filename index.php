@@ -18,13 +18,9 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
  <meta charset='utf-8'> -->
 
-
-
-
-
  <head>
-     <title>PlanskiXXX</title>
-     <a id="logout" href="/logout_handler.php">
+     <title>Planski</title>
+     <a href="/logout_handler.php">
         <p>Logout</p>
     </a>
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.css" />
@@ -66,7 +62,6 @@
 
      <div class="footer">
          Copyright 2020 &copy;
-
      </div>
 
 
