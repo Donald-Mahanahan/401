@@ -21,7 +21,7 @@
  <head>
      <title>Planski</title>
      <a href="/logout_handler.php">
-        <p>Logout</p>
+        <p id="logout-button">Logout</p>
     </a>
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.css" />
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.midnight-blue.css" />
