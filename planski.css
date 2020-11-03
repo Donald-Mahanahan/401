@@ -9,6 +9,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color:#bac4c9;
 }
 
 /* Style the header */
@@ -23,6 +24,17 @@ body {
 
 /* Create three equal columns that floats next to each other */
 .column1 {
+  background-color:#bac4c9;
+  border-style: solid;
+  float: left;
+  width: 25%;
+  padding-left: 25px;
+  padding-top: 50px;
+  min-width: 180px;
+  /* height: 500px;  */
+}
+
+.column1Login {
   background-color:#bac4c9;
   border-style: solid;
   float: left;
@@ -74,5 +86,5 @@ body {
 }
 
 .logout {
-  
+
 }
