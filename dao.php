@@ -79,10 +79,10 @@ class Dao{
             return;
         }
         try{
-            $query = "select user_id from user where userName = 'zach' and password = '5678';";
+            $query = "select user_id from user where userName = :userName and password = :password;";
             $execute = $conn->prepare($query);
-            $execute->bindParam("zach", $user);
-            $execute->bindParam("5678", $pwd);
+            $execute->bindParam(":userName", $user);
+            $execute->bindParam(":password", $pwd);
             $execute->execute();
             $result = $execute->fetch(PDO::FETCH_ASSOC);
             return $result;

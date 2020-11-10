@@ -27,12 +27,9 @@ require_once "$rootDir/dao.php";
 echo "test error1";
 
 $results = $dao->userExists($_POST['userName'], $_POST['password']);
-print_r($results);
+// print_r($results);
 
 
-// $dao = new Dao();
-// $dao->getUsername($_POST['comment']);
-// $_SESSION['good'][] = "Thank you for posting";
 
 unset($_SESSION['form']);
 if($results){
