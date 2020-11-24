@@ -78,11 +78,31 @@
      <script src="evo-calendar/js/evo-calendar.js"></script>
      <script>
          // Initialize evo-calendar in your script file or an inline <script> tag
-         $(document).ready(function() {
-             $('#calendar').evoCalendar({
+        $(document).ready(function() {
+            $('#calendar').evoCalendar({
                 'theme': 'Royal Navy'
-             })
+            })
+
+        // calendarEvents
+        $('#calendar').evoCalendar('calendarEvents', {
+            'calendarEvents': [
+          {
+               id: '4hducye', // Event's id (required, for removing event)
+               description: 'Lorem ipsum dolor sit amet..', // Description of event (optional)
+               badge: '1-day event', // Event badge (optional)
+               date: new Date(), // Date of event
+               type: 'holiday', // Type of event (event|holiday|birthday)
+               color: '#63d867', // Event custom color (optional)
+               everyYear: true // Event is every year (optional)
+          }
+     ]
+});
          })
+
+         
+
+
+
      </script>
 
  </body>
