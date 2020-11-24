@@ -20,6 +20,32 @@ class Dao{
             throw new \PDOException($e->getMessage(), (int)$e->getCode());
         }
     }
+
+
+    public function testAddTaskCalendar(){
+        $conn = $this->getConnection();
+        if(is_null($conn)) {
+            return;
+        }     
+            $query = "Select * from task;";
+            $execute = $conn->query($query);
+            
+            $out = '';
+            $cnt = 0;
+            if ($execute->rowCount() > 0) {
+                // output data of each row
+                
+                while($row = $execute->fetch()) {
+                    $cnt++;
+                    // $out .= '<input id="cb_' .$cnt. '" class="someclass" type="checkbox" />' .$row[0]. '<br/>';
+                    $out .= "<script>$('#calendar').evoCalendar('addCalendarEvent', { id: " .$row[1]. ", name: " .$row[3]. ", date: " .$row[2]. "});</script>";
+                }
+                echo $out;
+            } 
+            return $execute;   
+    }   
+
+
     
 
     public function testAddTask(){
@@ -40,8 +66,6 @@ class Dao{
                 }
                 echo $out;
             } 
-            
-            
             return $execute;   
     }   
 
@@ -50,8 +74,7 @@ class Dao{
         $saveQuery = "insert into task (user_id, event_date, task) values (1, CURDATE(), :task)";
         $q = $conn->prepare($saveQuery);
         $q->bindParam(":task", $task);
-        $q->execute();
-        
+        $q->execute();   
     }
 
     public function deleteTask($task) {
