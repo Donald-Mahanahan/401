@@ -38,7 +38,7 @@ class Dao{
                 while($row = $execute->fetch()) {
                     $cnt++;
                     // $out .= '<input id="cb_' .$cnt. '" class="someclass" type="checkbox" />' .$row[0]. '<br/>';
-                    $out .= "<script>$('#calendar').evoCalendar('addCalendarEvent', { id: " .$row[1]. ", name: " .$row[3]. ", date: " .$row[2]. "});</script>";
+                    $out .= "<script>$('#calendar').evoCalendar('addCalendarEvent', { id: '" .$row[1]. "', name: '" .$row[3]. "', date: '" .$row[2]. "'});</script>";
                 }
                 echo $out;
             } 
