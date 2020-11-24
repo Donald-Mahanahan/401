@@ -87,8 +87,8 @@
         $('#calendar').evoCalendar('addCalendarEvent', {
              id: 'kNybja6',
              name: 'Mom\'s Birthday',
-             description: 'Lorem ipsum dolor sit..',
-             date: '11/23/2020',
+             description: 'The day you die',
+             date: '2020-11-23',
              type: 'birthday'
         });
 
