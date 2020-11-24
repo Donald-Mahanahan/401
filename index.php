@@ -83,20 +83,30 @@
                 'theme': 'Royal Navy'
             })
 
-        // calendarEvents
-        $('#calendar').evoCalendar('calendarEvents', {
-            'calendarEvents': [
-          {
-               id: '4hducye', // Event's id (required, for removing event)
-               description: 'Lorem ipsum dolor sit amet..', // Description of event (optional)
-               badge: '1-day event', // Event badge (optional)
-               date: new Date(), // Date of event
-               type: 'holiday', // Type of event (event|holiday|birthday)
-               color: '#63d867', // Event custom color (optional)
-               everyYear: true // Event is every year (optional)
-          }
-     ]
-});
+        // addCalendarEvent
+        $('#calendar').evoCalendar('addCalendarEvent', {
+             id: 'kNybja6',
+             name: 'Mom\'s Birthday',
+             description: 'Lorem ipsum dolor sit..',
+             date: 'May 27, 2020',
+             type: 'birthday'
+        });
+        // add multiple events
+        $('#calendar').evoCalendar('addCalendarEvent', [
+             {
+                  id: 'kNybja6',
+                  name: 'Mom\'s Birthday',
+                  date: 'May 27, 1965',
+                  type: 'birthday',
+                  everyYear: true // optional
+             },
+             {
+                  id: 'asDf87L',
+                  name: 'Graduation Day!',
+                  date: 'March 21, 2020',
+                  type: 'event'
+             }
+]);
          })
 
          
