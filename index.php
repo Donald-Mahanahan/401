@@ -88,7 +88,7 @@
              id: 'kNybja6',
              name: 'Mom\'s Birthday',
              description: 'The day you die',
-             date: '2020-11-23',
+             date: '2020-11-03',
              type: 'birthday'
         });
 
