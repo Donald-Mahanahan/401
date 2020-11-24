@@ -32,16 +32,25 @@ class Dao{
             
             $out = '';
             $cnt = 0;
+            
+            $out .= "<script>$(document).ready(function() {
+                $('#calendar').evoCalendar({
+                    'theme': 'Royal Navy'
+                });";
+            
             if ($execute->rowCount() > 0) {
                 // output data of each row
+                
                 
                 while($row = $execute->fetch()) {
                     $cnt++;
                     // $out .= '<input id="cb_' .$cnt. '" class="someclass" type="checkbox" />' .$row[0]. '<br/>';
-                    $out .= "<script>$('#calendar').evoCalendar('addCalendarEvent', { id: '" .$row[1]. "', name: '" .$row[3]. "', date: '" .$row[2]. "'});</script>";
+                    $out .= "$('#calendar').evoCalendar('addCalendarEvent', { id: '" .$row[1]. "', name: '" .$row[3]. "', date: '" .$row[2]. "'});";
                 }
-                echo $out;
+                
             } 
+            $out .= "})</script>";
+            echo $out;
             return $execute;   
     }   
 
