@@ -88,7 +88,7 @@
              id: 'kNybja6',
              name: 'Mom\'s Birthday',
              description: 'Lorem ipsum dolor sit..',
-             date: 'November 23, 2020',
+             date: '11/23/2020',
              type: 'birthday'
         });
 
