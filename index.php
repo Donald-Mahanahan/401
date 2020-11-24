@@ -76,19 +76,7 @@
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
      <script src="evo-calendar/js/evo-calendar.js"></script>
-     <script>
-         // Initialize evo-calendar in your script file or an inline <script> tag
-        $(document).ready(function() {
-            $('#calendar').evoCalendar({
-                'theme': 'Royal Navy'
-            })
-    })
 
-         
-
-
-
-     </script>
 
         <?php
         $taskCalendar = $dao->testAddTaskCalendar();
