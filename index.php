@@ -56,7 +56,7 @@
                                 echo "<div class='good'>{$message}</div>";
                                 }
                                 foreach ($_SESSION['bad'] as $message) {
-                                echo "<div class='error'>{$message}<span class='fadeout'></span></div>";
+                                echo "<div id='error'>{$message}<span class='fadeout'></span></div>";
                                 }
                             }
 
