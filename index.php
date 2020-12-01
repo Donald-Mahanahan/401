@@ -27,6 +27,8 @@
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.royal-navy.css" />
      <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
      <link rel="stylesheet" href="planski.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/myScript.js"></script>
  </head>
  <body>
      <div class="header" style="height:100%">
@@ -54,7 +56,7 @@
                                 echo "<div class='good'>{$message}</div>";
                                 }
                                 foreach ($_SESSION['bad'] as $message) {
-                                echo "<div class='bad'>{$message}<span class='fadeout'>X</span></div>";
+                                echo "<div class='error'>{$message}<span class='fadeout'></span></div>";
                                 }
                             }
 
