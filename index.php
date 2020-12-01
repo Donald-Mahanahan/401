@@ -43,7 +43,7 @@
                 ?>
             </div>
 
-            <div style="height:120px;width:300px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+            <div class="scrollBox">
                 <form id="task-form" method="POST" action="/task_handler.php">
                     <div class="task-form-row">
                         <?php
