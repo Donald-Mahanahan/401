@@ -55,8 +55,6 @@
                 <form id="task-form" method="POST" action="/task_handler.php">
                     <div class="task-form-row">
                         <!-- <div class="scrollBox"> -->
-
-                        
                             <ul>
                         <?php
                             if (isset($_SESSION['good'])) {
