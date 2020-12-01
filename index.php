@@ -44,24 +44,21 @@
             </div>
 
             <div style="height:120px;width:300px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
-            
-            
-                
-             <form id="task-form" method="POST" action="/task_handler.php">
-                 <div class="task-form-row">
-                    <?php
-                    $task = $dao->testAddTask();
-                    ?>
-                 </div>
-                 <div class="task-form-row">Task: <input type="text" name="task" id="task"/></div>
-                 <div class="login-form-row">
-                    <input id="addTask" type="submit" name="addTask" value="Add Task"/> 
-                 
-                    <input id="deleteTask" type="submit" name="deleteTask" value="Delete Task"/>
-                 </div>
-            </form>  
-            
+                <form id="task-form" method="POST" action="/task_handler.php">
+                    <div class="task-form-row">
+                        <?php
+                        $task = $dao->testAddTask();
+                        ?>
             </div>
+                    </div>
+                    <div class="task-form-row">Task: <input type="text" name="task" id="task"/></div>
+                    <div class="login-form-row">
+                        <input id="addTask" type="submit" name="addTask" value="Add Task"/> 
+                        <input id="deleteTask" type="submit" name="deleteTask" value="Delete Task"/>
+                    </div>
+                </form>     
+
+
          </div>
          <div class="column2">
              <div id="calendar"></div>
