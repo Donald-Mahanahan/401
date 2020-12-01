@@ -11,7 +11,6 @@
     }
  ?>
  
- 
  <!doctype html>
  <html lang="en">
  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=0">
@@ -27,12 +26,9 @@
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.midnight-blue.css" />
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.royal-navy.css" />
      <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-
      <link rel="stylesheet" href="planski.css">
  </head>
-
  <body>
-
      <div class="header" style="height:100%">
          Planski
          <img src="images\android-chrome-192x192.png" alt="Italian Trulli" style="height:50px">
@@ -45,6 +41,10 @@
                 $userName = $dao->getUsername($_SESSION['user_id']);
                 echo "<h1 class='heading-index'> Welcome {$userName['userName']}</h1>";
                 ?>
+            </div>
+
+            <div style="height:120px;width:120px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+            As you can see, once there's enough text in this box, the box will grow scroll bars... that's why we call it a scroll box! You could also place an image into the scroll box.
             </div>
                 
              <form id="task-form" method="POST" action="/task_handler.php">
@@ -59,12 +59,10 @@
                  
                     <input id="deleteTask" type="submit" name="deleteTask" value="Delete Task"/>
                  </div>
-            </form>
-             
+            </form>          
          </div>
          <div class="column2">
              <div id="calendar"></div>
-
          </div>
      </div>
 
@@ -72,17 +70,10 @@
          Copyright 2020 &copy;
      </div>
 
-
-
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
      <script src="evo-calendar/js/evo-calendar.js"></script>
-
-
         <?php
         $taskCalendar = $dao->testAddTaskCalendar();
         ?>
-
-
  </body>
-
  </html
