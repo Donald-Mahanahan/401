@@ -232,7 +232,6 @@ body {
 .scrollBox{
   height:120px;
   width:300px;
-  border:1px solid #ccc;
-  font:16px/26px Georgia, Garamond, Serif;
+  border:5px solid #ccc;;
   overflow:auto;
 }
