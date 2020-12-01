@@ -237,3 +237,33 @@ div.scrollBox{
   border:5px solid #ccc;
   overflow: auto;
 }
+
+.bad {
+  border: black 1px solid;
+  padding: 10 15;
+  background-color: #B73239;
+  color: white;
+  font-family:Helvetica;
+  margin-bottom: 5px;
+  width: 500px;
+}
+
+.good {
+  border: black 1px solid;
+  padding: 10 15;
+  background-color: green;
+  color: white;
+  font-family:Helvetica;
+  margin-bottom: 5px;
+  width: 500px;
+
+}
+
+.fadeout {
+  float: right;
+}
+
+.fadeout:hover {
+  cursor:pointer;
+  text-decoration: underline;
+}
