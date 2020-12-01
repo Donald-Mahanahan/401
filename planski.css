@@ -229,9 +229,9 @@ body {
   text-align:center;
 }
 
-#scrollBox{
+div.scrollBox{
   height:120px;
   width:300px;
   border:5px solid #ccc;;
-  overflow:auto;
+  overflow: scroll;
 }
