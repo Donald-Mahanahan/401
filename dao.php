@@ -72,7 +72,7 @@ class Dao{
                 while($row = $execute->fetch()) {
                     $cnt++;
                     // $out .= '<input id="cb_' .$cnt. '" class="someclass" type="checkbox" />' .$row[0]. '<br/>';
-                    $out .= '<li' .$cnt. '"/>' .$row[0]. '<br/>';
+                    $out .= '<li/>' .$row[0]. '<br/>';
                 }
                 echo $out;
             } 
