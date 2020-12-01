@@ -27,8 +27,14 @@
      <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.royal-navy.css" />
      <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
      <link rel="stylesheet" href="planski.css">
+
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="js/myScript.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
  </head>
  <body>
      <div class="header" style="height:100%">
@@ -49,6 +55,8 @@
                 <form id="task-form" method="POST" action="/task_handler.php">
                     <div class="task-form-row">
                         <!-- <div class="scrollBox"> -->
+
+                        
                             <ul>
                         <?php
                             if (isset($_SESSION['good'])) {
@@ -56,7 +64,7 @@
                                 echo "<div id='error'>{$message}</div>";
                                 }
                                 foreach ($_SESSION['bad'] as $message) {
-                                echo "<div id='error'>{$message}<span class='fadeout'></span></div>";
+                                echo "<div id='error'>{$message}<span class='fadeout'>XXXXXXX</span></div>";
                                 }
                             }
 
