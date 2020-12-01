@@ -50,7 +50,7 @@
                             <ul>
                         <?php
                         if (isset($_SESSION['bad'])) {
-                            echo "<div id='error'>{$_SESSION['bad']}</div>";
+                            echo "<div id='error'>{$_SESSION['message']}</div>";
                             unset($_SESSION['bad']);
                         }
 
