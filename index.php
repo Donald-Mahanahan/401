@@ -53,7 +53,7 @@
                         <?php
                             if (isset($_SESSION['good'])) {
                                 foreach ($_SESSION['good'] as $message) {
-                                echo "<div class='good'>{$message}</div>";
+                                echo "<div id='error'>{$message}</div>";
                                 }
                                 foreach ($_SESSION['bad'] as $message) {
                                 echo "<div id='error'>{$message}<span class='fadeout'></span></div>";
