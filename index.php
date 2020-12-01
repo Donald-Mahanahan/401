@@ -49,11 +49,14 @@
                         <!-- <div class="scrollBox"> -->
                             <ul>
                         <?php
-                        if (isset($_SESSION['bad'])) {
-                            echo "<div id='error'>{$_SESSION['message']}</div>";
-                            unset($_SESSION['bad']);
-                        }
-
+                            if (isset($_SESSION['good'])) {
+                                foreach ($_SESSION['good'] as $message) {
+                                echo "<div class='good'>{$message}</div>";
+                                }
+                                foreach ($_SESSION['bad'] as $message) {
+                                echo "<div class='bad'>{$message}<span class='fadeout'>X</span></div>";
+                                }
+                            }
 
                         $task = $dao->testAddTask();
                         ?>
