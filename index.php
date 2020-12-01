@@ -44,8 +44,8 @@
             </div>
 
             <div style="height:120px;width:120px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
-            As you can see, once there's enough text in this box, the box will grow scroll bars... that's why we call it a scroll box! You could also place an image into the scroll box.
-            </div>
+            
+            
                 
              <form id="task-form" method="POST" action="/task_handler.php">
                  <div class="task-form-row">
@@ -59,7 +59,9 @@
                  
                     <input id="deleteTask" type="submit" name="deleteTask" value="Delete Task"/>
                  </div>
-            </form>          
+            </form>  
+            
+            </div>
          </div>
          <div class="column2">
              <div id="calendar"></div>
