@@ -232,6 +232,7 @@ body {
 div.scrollBox{
   height:120px;
   width:300px;
+  min-width: 180px;
   border:5px solid #ccc;;
   overflow: auto;
 }
