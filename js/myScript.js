@@ -1,6 +1,6 @@
 // onload event
 $(function() {
     $(".fadeout").click(function () {
-      $(this).parent(".bad").fadeOut(500);
+      $(".fadeout").fadeOut(500);
     });
   });

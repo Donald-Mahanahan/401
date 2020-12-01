@@ -259,11 +259,6 @@ div.scrollBox{
 
 }
 
-.fadeout {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 3s linear;
-}
 
 .fadeout:hover {
   cursor:pointer;
