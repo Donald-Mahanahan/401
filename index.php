@@ -49,6 +49,12 @@
                         <!-- <div class="scrollBox"> -->
                             <ul>
                         <?php
+                        if (isset($_SESSION['bad'])) {
+                            echo "<div id='error'>{$_SESSION['bad']}</div>";
+                            unset($_SESSION['bad']);
+                        }
+
+
                         $task = $dao->testAddTask();
                         ?>
                             </ul>
