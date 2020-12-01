@@ -46,11 +46,11 @@
             
                 <form id="task-form" method="POST" action="/task_handler.php">
                     <div class="task-form-row">
-                        <div class="scrollBox">
+                        <!-- <div class="scrollBox"> -->
                         <?php
                         $task = $dao->testAddTask();
                         ?>
-                        </div>
+                        <!-- </div> -->
                     </div>
                     <div class="task-form-row">Task: <input type="text" name="task" id="task"/></div>
                     <div class="login-form-row">
