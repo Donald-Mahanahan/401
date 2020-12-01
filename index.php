@@ -52,7 +52,6 @@
             
                 <form id="task-form" method="POST" action="/task_handler.php">
                     <div class="task-form-row">
-                        <!-- <div class="scrollBox"> -->
                             <ul>
                         <?php
                             if (isset($_SESSION['good'])) {
@@ -60,14 +59,13 @@
                                 echo "<div id='error'>{$message}</div>";
                                 }
                                 foreach ($_SESSION['bad'] as $message) {
-                                echo "<div id='error'>{$message}<span class='fadeout'>XXfadeoutXX</span></div>";
+                                echo "<div id='error'>{$message}<span>XXfadeoutXX</span></div>";
                                 }
                             }
 
                         $task = $dao->testAddTask();
                         ?>
                             </ul>
-                        <!-- </div> -->
                     </div>
                     <div class="task-form-row">Task: <input type="text" name="task" id="task"/></div>
                     <div class="login-form-row">
