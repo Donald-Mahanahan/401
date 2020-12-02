@@ -184,7 +184,15 @@ body {
       margin-left: 0px;
 }
 
-#userName, #password {
+#userName {
+  border-radius: 15px;
+  background: #ddd;
+  border: black solid 1px;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+ #password {
   border-radius: 15px;
   background: #ddd;
   border: black solid 1px;
@@ -260,7 +268,7 @@ div.scrollBox{
 }
 
 .fadeout{
-  border-radius: 15px;
+  /* border-radius: 15px; */
   border: black solid 1px;
   text-align:center;
   /* cursor:pointer; */
@@ -268,7 +276,7 @@ div.scrollBox{
 }
 
 .fadeout:hover {
-  border-radius: 15px;
+  /* border-radius: 15px; */
   border: black solid 1px;
   text-align:center;
   cursor:pointer;
