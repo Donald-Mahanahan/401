@@ -59,7 +59,7 @@
                                 echo "<div id='error'>{$message}</div>";
                                 }
                                 foreach ($_SESSION['bad'] as $message) {
-                                echo "<div class='fadeout'>{$message}<span class='fadeout'>--XXfadeoutXX--</span></div>";
+                                echo "<div class='fadeout'>{$message}</div>";
                                 }
                             }
 
@@ -67,7 +67,7 @@
                         ?>
                             </ul>
                     </div>
-                    <div class="task-form-row">Task: <input type="text" name="task" id="task"/></div>
+                    <div class="task-form-row">Task: <input class="task" type="text" name="task" id="task"/></div>
                     <div class="login-form-row">
                         <input id="addTask" type="submit" name="addTask" value="Add Task"/> 
                         <input id="deleteTask" type="submit" name="deleteTask" value="Delete Task"/>
