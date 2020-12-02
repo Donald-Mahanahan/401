@@ -259,6 +259,14 @@ div.scrollBox{
 
 }
 
+.fadeout{
+  border-radius: 15px;
+  border: black solid 1px;
+  text-align:center;
+  /* cursor:pointer; */
+  font-family:Helvetica;
+}
+
 .fadeout:hover {
   border-radius: 15px;
   border: black solid 1px;
