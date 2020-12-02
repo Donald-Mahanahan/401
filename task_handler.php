@@ -19,7 +19,7 @@ if (strlen($_POST['task']) == 0) {
   $_SESSION['bad'][] = "Please enter a task";
 }
 
-if (strlen($_POST['task']) > 50) {
+if (strlen($_POST['task']) > 100) {
   $_SESSION['bad'][] = "task is too long.";
 }
 
