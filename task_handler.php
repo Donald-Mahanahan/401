@@ -33,15 +33,16 @@ $dao = new Dao();
 if($_POST["addTask"]) {
   echo "error1";
   $dao->addTask($_POST['task']);
+  $_SESSION['good'][] = "Get this Finished!";
 }
-
-if($_POST["deleteTask"]) {
+else if($_POST["deleteTask"]) {
   echo "error2";
 
   $dao->deleteTask($_POST['task']);
+  $_SESSION['good'][] = "Well Done!";
 }
 
-$_SESSION['good'][] = "Get this Finished!";
+// $_SESSION['good'][] = "Get this Finished!";
 
 
 header("Location: https://polar-sands-59708.herokuapp.com/");
