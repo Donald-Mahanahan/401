@@ -268,9 +268,11 @@ div.scrollBox{
 }
 
 .fadeout{
+  color: #D8000C;
+  background-color: #FFBABA;
   /* border-radius: 15px; */
-  color: #00529B;
-	background-color: #BDE5F8;
+  /* color: #00529B;
+	background-color: #BDE5F8; */
   border-style: inset;
   border: black solid 1px;
   text-align:center;
@@ -279,8 +281,10 @@ div.scrollBox{
 }
 
 .fadeout:hover {
-  color: #00529B;
-	background-color: #BDE5F8;
+  color: #D8000C;
+  background-color: #FFBABA;
+  /* color: #00529B;
+	background-color: #BDE5F8; */
   border-style: inset;
   /* border-radius: 15px; */
   border: black solid 1px;
