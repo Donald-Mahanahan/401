@@ -35,7 +35,7 @@
                 <?php
                     
                     if (isset($_SESSION['message'])) {
-                        echo "<div><span class='fadeout'>{$_SESSION['message']}</span></div>";
+                        echo "<div><span class='fadeoutError'>{$_SESSION['message']}</span></div>";
                         unset($_SESSION['message']);
                     }
                 ?>

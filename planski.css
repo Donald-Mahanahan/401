@@ -267,6 +267,36 @@ div.scrollBox{
 
 }
 
+.fadeoutError{
+  color: #D63301;
+  background-color: #FFCCBA;
+  /* color: #D8000C;
+  background-color: #FFBABA; */
+  /* border-radius: 15px; */
+  /* color: #00529B;
+	background-color: #BDE5F8; */
+  border-style: inset;
+  border: black solid 1px;
+  text-align:center;
+  /* cursor:pointer; */
+  font-family:Helvetica;
+}
+
+.fadeoutError:hover {
+  color: #D63301;
+  background-color: #FFCCBA;
+  /* color: #D8000C;
+  background-color: #FFBABA; */
+  /* color: #00529B;
+	background-color: #BDE5F8; */
+  border-style: inset;
+  /* border-radius: 15px; */
+  border: black solid 1px;
+  text-align:center;
+  cursor:pointer;
+  font-family:Helvetica;
+}
+
 .fadeout{
   color: #9F6000;
   background-color: #FEEFB3;
