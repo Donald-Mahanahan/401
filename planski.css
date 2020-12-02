@@ -276,7 +276,7 @@ div.scrollBox{
   border-style: inset;
   border: black solid 1px;
   text-align:center;
-  cursor:pointer;
+  /* cursor:pointer; */
   font-family:Helvetica;
 }
 
