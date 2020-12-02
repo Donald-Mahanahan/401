@@ -269,6 +269,7 @@ div.scrollBox{
 
 .fadeout{
   /* border-radius: 15px; */
+  border-style: inset;
   border: black solid 1px;
   text-align:center;
   /* cursor:pointer; */
@@ -276,6 +277,7 @@ div.scrollBox{
 }
 
 .fadeout:hover {
+  border-style: inset;
   /* border-radius: 15px; */
   border: black solid 1px;
   text-align:center;
