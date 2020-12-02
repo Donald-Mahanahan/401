@@ -57,12 +57,6 @@ body {
 .column1Login2 {
   background-color:#bac4c9;
   border-style: solid;
-  /* float: left;
-  width: 33%;
-  padding-left: 100px;
-  padding-right:100px;
-  padding-bottom: 50px;
-  padding-top: 50px; */
   min-width: 350px;
   height: 475px; 
 }
@@ -270,27 +264,16 @@ div.scrollBox{
 .fadeoutError{
   color: #D63301;
   background-color: #FFCCBA;
-  /* color: #D8000C;
-  background-color: #FFBABA; */
-  /* border-radius: 15px; */
-  /* color: #00529B;
-	background-color: #BDE5F8; */
   border-style: inset;
   border: black solid 1px;
   text-align:center;
-  /* cursor:pointer; */
   font-family:Helvetica;
 }
 
 .fadeoutError:hover {
   color: #D63301;
   background-color: #FFCCBA;
-  /* color: #D8000C;
-  background-color: #FFBABA; */
-  /* color: #00529B;
-	background-color: #BDE5F8; */
   border-style: inset;
-  /* border-radius: 15px; */
   border: black solid 1px;
   text-align:center;
   cursor:pointer;
@@ -300,27 +283,16 @@ div.scrollBox{
 .fadeout{
   color: #9F6000;
   background-color: #FEEFB3;
-  /* color: #D8000C;
-  background-color: #FFBABA; */
-  /* border-radius: 15px; */
-  /* color: #00529B;
-	background-color: #BDE5F8; */
   border-style: inset;
   border: black solid 1px;
   text-align:center;
-  /* cursor:pointer; */
   font-family:Helvetica;
 }
 
 .fadeout:hover {
   color: #9F6000;
   background-color: #FEEFB3;
-  /* color: #D8000C;
-  background-color: #FFBABA; */
-  /* color: #00529B;
-	background-color: #BDE5F8; */
   border-style: inset;
-  /* border-radius: 15px; */
   border: black solid 1px;
   text-align:center;
   cursor:pointer;

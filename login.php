@@ -54,7 +54,7 @@
      </div>
 
      <div class="footer-Login">
-         Copyright 2020 &copy;
+     &copy; Copyright 2020 Zach Sherwood
      </div>
 
  </body>

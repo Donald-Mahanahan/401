@@ -45,16 +45,6 @@ if($results){
     exit;
 }
 
-
-// if (($_POST['username'] == 'zach') && ($_POST['password'] == '5678')) {
-//     $_SESSION['authenticated'] = true;
-//     $_SESSION['form'] = $_POST;
-//     header("Location: https://polar-sands-59708.herokuapp.com/");
-//   } else {
-//     $_SESSION['authenticated'] = false;
-//     header("Location: https://polar-sands-59708.herokuapp.com/login.php");
-//     exit();
-
 echo "test error1";
 
 ?>

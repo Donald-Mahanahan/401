@@ -84,13 +84,13 @@
      </div>
 
      <div class="footer">
-         Copyright 2020 &copy;
+     &copy; Copyright 2020 Zach Sherwood
      </div>
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
      <script src="evo-calendar/js/evo-calendar.js"></script>
         <?php
-        $taskCalendar = $dao->testAddTaskCalendar();
+        $taskCalendar = $dao->AddTaskCalendar();
         ?>
  </body>
  </html

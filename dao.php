@@ -22,7 +22,7 @@ class Dao{
     }
 
 
-    public function testAddTaskCalendar(){
+    public function AddTaskCalendar(){
         $conn = $this->getConnection();
         if(is_null($conn)) {
             return;
@@ -53,9 +53,6 @@ class Dao{
             echo $out;
             return $execute;   
     }   
-
-
-    
 
     public function testAddTask(){
         $conn = $this->getConnection();
