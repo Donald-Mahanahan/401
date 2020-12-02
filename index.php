@@ -56,7 +56,7 @@
                         <?php
                             if (isset($_SESSION['good'])) {
                                 foreach ($_SESSION['good'] as $message) {
-                                echo "<div id='error'>{$message}</div>";
+                                echo "<div id='fadeout'>{$message}</div>";
                                 }
                                 foreach ($_SESSION['bad'] as $message) {
                                 echo "<div class='fadeout'>{$message}</div>";
