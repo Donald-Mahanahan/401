@@ -35,7 +35,7 @@
                 <?php
                     
                     if (isset($_SESSION['message'])) {
-                        echo "<div id='error'>{$_SESSION['message']}</div>";
+                        echo "<div class='fadeout'>{$_SESSION['message']}</div>";
                         unset($_SESSION['message']);
                     }
                 ?>
@@ -52,7 +52,7 @@
             </form>
         </div>
      </div>
-     
+
      <div class="footer-Login">
          Copyright 2020 &copy;
      </div>
