@@ -269,6 +269,8 @@ div.scrollBox{
 
 .fadeout{
   /* border-radius: 15px; */
+  color: #00529B;
+	background-color: #BDE5F8;
   border-style: inset;
   border: black solid 1px;
   text-align:center;
@@ -277,6 +279,8 @@ div.scrollBox{
 }
 
 .fadeout:hover {
+  color: #00529B;
+	background-color: #BDE5F8;
   border-style: inset;
   /* border-radius: 15px; */
   border: black solid 1px;
